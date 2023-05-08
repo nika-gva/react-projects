@@ -25,6 +25,10 @@ body{
 .navigation-bar h1{
   color: wheat;
   text-transform: uppercase;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .link{
