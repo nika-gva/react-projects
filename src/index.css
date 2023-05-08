@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+.main-body{
+  display: flex;
+}
+.elements{
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.navigation-bar{
+  background-color: rgb(97, 94, 94);
+  padding: 10px;
+}
+.navigation-bar h1{
+  color: wheat;
+  text-transform: uppercase;
+}
+
+.link{
+  text-decoration: none;
+  background-color: antiquewhite;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.active-link{
+  background-color: rgb(154, 194, 230);
+}
+
+.landing-container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(185, 185, 185);
+  position: relative;
+}
+.landing-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(122, 121, 121);
+  padding: 50px;
+  text-align: center;
+}
+.landing-box h1{
+  margin-bottom: 30px;
+  color: white;
+  text-transform: capitalize;
+}
+.landing-box p{
+  color: white;
+}

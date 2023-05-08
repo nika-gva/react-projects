@@ -1,0 +1,29 @@
+[{
+    "id": 1,
+    "image": "https://images.pexels.com/photos/3889857/pexels-photo-3889857.jpeg",
+    "title": "Santorini, Greece",
+    "description": "Santorini is a picturesque Greek island located in the southern Aegean Sea. Its stunning beauty and rich history have made it a popular destination for tourists from around the world. With its whitewashed buildings, blue-domed churches, and breathtaking views of the caldera, Santorini is truly a unique and unforgettable place. Whether you're looking to relax on the beach, explore ancient ruins, or indulge in delicious Greek cuisine, Santorini has something to offer everyone. Book your trip today and experience the magic of this incredible island!",
+    "price": "$2500"
+  },
+  {
+    "id": 2,
+    "image": "https://images.pexels.com/photos/2102057/pexels-photo-2102057.jpeg",
+    "title": "Cinque Terre, Italy",
+    "description": "Cinque Terre is a stunning region of Italy located on the Ligurian coast. It is known for its colorful seaside villages, rugged cliffs, and pristine beaches. With its warm Mediterranean climate and breathtaking scenery, Cinque Terre is the perfect destination for anyone looking for a relaxing and unforgettable vacation. Whether you're hiking along the coastal trails, sampling local seafood dishes, or simply lounging on the beach, you're sure to fall in love with the beauty and charm of this incredible place. Book your trip today and start your adventure!",
+    "price": "$2300"
+  },
+  {
+    "id": 3,
+    "image": "https://images.pexels.com/photos/1313266/pexels-photo-1313266.jpeg",
+    "title": "Bora Bora, French Polynesia",
+    "description": "Bora Bora is a small island located in French Polynesia, known for its crystal-clear waters, coral reefs, and luxurious overwater bungalows. With its stunning natural beauty and serene atmosphere, Bora Bora is the perfect destination for anyone looking to escape the hustle and bustle of everyday life. Whether you're lounging on the beach, snorkeling among colorful fish and sea turtles, or indulging in spa treatments and fine dining, Bora Bora is sure to leave you feeling refreshed and rejuvenated. Book your trip today and experience the magic of this tropical paradise!",
+    "price": "$2800"
+  },
+  {
+    "id": 4,
+    "image": "https://images.pexels.com/photos/460968/pexels-photo-460968.jpeg",
+    "title": "Serengeti National Park, Tanzania",
+    "description": "Serengeti National Park is a vast and stunningly beautiful wilderness area located in Tanzania. It is known for its incredible wildlife, including lions, elephants, giraffes, and zebras, as well as its breathtaking landscapes, including sweeping plains, rolling hills, and ancient rock formations. Whether you're on a guided safari, exploring on foot, or simply taking in the sights and sounds of the African bush, Serengeti National Park is sure to be an unforgettable experience. Book your trip today and immerse yourself in the natural wonders of this incredible place!",
+    "price": "$2900"
+  }
+]
