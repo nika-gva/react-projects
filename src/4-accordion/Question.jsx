@@ -13,7 +13,6 @@ export function Question({ question,answer,id, active }) {
     setIsActive(!isActive);
   }
   useEffect(()=>{
-    questHight.current.classList.contains('active') ? console.log("true"): console.log("false");;
     setStartHeight(questHight.current.offsetHeight);
     setFinishHeight(answerHight.current.offsetHeight);
   },[questHight,answer])
