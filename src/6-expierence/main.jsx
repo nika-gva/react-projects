@@ -21,8 +21,8 @@ export function App() {
 
   if (isLoading) {
     return (
-      <div className="ex-container">
-        <h1 className="ex-box" style={{textAlign: "center"}}>Loading...</h1>
+      <div className="loading">
+        <h1 className="loading-content" style={{textAlign: "center"}}>Loading...</h1>
       </div>
     );
   }

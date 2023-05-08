@@ -5,7 +5,6 @@ import Data from "./data";
 
 export function App() {
   const [data, setData] = useState(Data);
-  const testVar = "";
   return (
     <div className="accordion-container">
       <div className="accordion-content">

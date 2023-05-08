@@ -29,5 +29,10 @@ export default [
     "to": "/expierence",
     "name": "6-Expierence"
   },
+  {
+    "id": 6,
+    "to": "/slider",
+    "name": "7-Slider"
+  },
   
 ];

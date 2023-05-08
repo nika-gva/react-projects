@@ -21,6 +21,7 @@ body{
 .navigation-bar{
   background-color: rgb(97, 94, 94);
   padding: 10px;
+  border-right: 2px solid black;
 }
 .navigation-bar h1{
   color: wheat;
@@ -67,4 +68,21 @@ body{
 }
 .landing-box p{
   color: white;
+}
+
+/* loading */
+.loading{
+  background-color: rgb(163, 219, 219);
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.loading-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  text-transform: capitalize;
+  text-align: center;
 }

@@ -8,6 +8,7 @@ import { Page as Tours } from "./2-tours/main";
 import { App as Accordion } from "./4-accordion/main";
 import { App as Menu } from "./5-menu/main";
 import { App as Expierence } from "./6-expierence/main";
+import { App as Slider } from "./7-slider/main";
 import NavData from "./navigation";
 const url = "https://api.jsonbin.io/v3/b/6457bd119d312622a35978d3";
 
@@ -50,6 +51,7 @@ function App() {
             <Route path="/accordion" element={<Accordion/>}/>
             <Route path="/menu" element={<Menu/>}/>
             <Route path="/expierence" element={<Expierence/>}/>
+            <Route path="/slider" element={<Slider/>}/>
           </Routes>
         </div>
       </div>

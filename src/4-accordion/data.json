@@ -1,31 +1,31 @@
 [{
     "active": true,
-    "id": 1,
+    "id": 0,
     "question": "What is the capital of France?",
     "answer": "The capital of France is Paris, known for its architecture, history, landmarks, art, fashion, and cuisine."
 }, {
     "active": false,
-    "id": 2,
+    "id": 1,
     "question": "What is machine learning?",
     "answer": "Machine learning is a type of AI that allows software to predict outcomes without being explicitly programmed, used in image/speech recognition, fraud detection, and more."
 }, {
     "active": false,
-    "id": 3,
+    "id": 2,
     "question": "What is renewable energy?",
     "answer": "Renewable energy is energy from natural sources like sunlight, wind, and water, which can be replenished over time and are cleaner alternatives to fossil fuels."
 }, {
     "active": false,
-    "id": 4,
+    "id": 3,
     "question": "What is the purpose of the stock market?",
     "answer": "The stock market is a platform for companies to raise capital and for investors to buy/sell securities, enabling economic growth and wealth creation."
 }, {
     "active": false,
-    "id": 5,
+    "id": 4,
     "question": "What is the meaning of life?",
     "answer": "The meaning of life is subjective and varies from person to person, but often involves finding purpose, fulfillment, and happiness in one's own way."
 }, {
     "active": false,
-    "id": 6,
+    "id": 5,
     "question": "What is the difference between a virus and a bacteria?",
     "answer": "Viruses are smaller and need a host to survive, while bacteria are independent organisms. Both can cause disease but require different treatments."
 }]
