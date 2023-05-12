@@ -2,6 +2,7 @@ import { React, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
+import { FiMenu } from "react-icons/fi"
 import { App as Birthday } from "./1-birthdayToday/main";
 import { App as Review } from "./3-reviews/main";
 import { Page as Tours } from "./2-tours/main";
@@ -15,8 +16,9 @@ const url = "https://api.jsonbin.io/v3/b/6457bd119d312622a35978d3";
 function App() {
   const [navigation, setNavigation] = useState(NavData);
   const [active, setActive] = useState();
+  const [open, setOpen] = useState(true);
 
-  function LandingPage(){
+  function LandingPage() {
     return (
       <main className="landing-container">
         <section className="landing-box">
@@ -30,29 +32,33 @@ function App() {
   return (
     <BrowserRouter>
       <div className="main-body">
-        <div className="navigation-bar">
-          <h1>navigation</h1>
-          <ul>
-            {navigation.map((link,index) => {
-              return (
-                <Link to={link.to} onClick={()=>setActive(index)} className={`link ${index === active && "active-link"}`} key={index}>
-                  {link.name}
-                </Link>
-              );
-            })}
-          </ul>
+        <div className={`navigation-bar  ${!open && 'nav-close'}`}>
+          <div className="navigation-inner">
+            <h1>navigation</h1>
+            <ul>
+              {navigation.map((link, index) => {
+                return (
+                  <Link to={link.to} onClick={() => setActive(index)} className={`link ${index === active && "active-link"}`} key={index}>
+                    {link.name}
+                  </Link>
+                );
+              })}
+            </ul>
+            <button onClick={() => setOpen(false)} className="navigation-button">hide</button>
+          </div>
         </div>
         <div className="elements">
           <Routes>
-            <Route path="/" element={<LandingPage/>}/>
-            <Route path="/birthday" element={<Birthday/>}/>
-            <Route path="/tours" element={<Tours/>}/>
-            <Route path="/review" element={<Review/>}/>
-            <Route path="/accordion" element={<Accordion/>}/>
-            <Route path="/menu" element={<Menu/>}/>
-            <Route path="/expierence" element={<Expierence/>}/>
-            <Route path="/slider" element={<Slider/>}/>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/birthday" element={<Birthday />} />
+            <Route path="/tours" element={<Tours />} />
+            <Route path="/review" element={<Review />} />
+            <Route path="/accordion" element={<Accordion />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/expierence" element={<Expierence />} />
+            <Route path="/slider" element={<Slider />} />
           </Routes>
+          {!open && <button className="nav-open" onClick={() => setOpen(true)}><FiMenu /></button>}
         </div>
       </div>
     </BrowserRouter>
