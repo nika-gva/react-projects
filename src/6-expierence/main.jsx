@@ -3,6 +3,7 @@ import "./styles.css";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
 const url = "https://api.jsonbin.io/v3/b/6457c1bc8e4aa6225e98462b";
+const url_local = "http://localhost:5173/db.json";
 
 export function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -10,13 +11,13 @@ export function App() {
   const [value, setValue] = useState(0);
 
   const fetchJobs = async () => {
-    const response = await fetch(url);
+    const response = await fetch(url_local);
     const allJobs = await response.json();
-    setJobs(allJobs.record);
+    setJobs(allJobs.experience);
     setIsLoading(false);
   };
   useEffect(() => {
-    fetchJobs();
+    fetchJobs()
   }, []);
 
   if (isLoading) {
@@ -26,8 +27,7 @@ export function App() {
       </div>
     );
   }
-  const { title, desc, date, company } = jobs[value];
-
+  const {company_name,job_title,date,description} = jobs[value];
   return (
     <main className="ex-container">
       <section className="ex-box">
@@ -40,16 +40,16 @@ export function App() {
             {jobs.map((data, index) => {
               return (
                 <button className={`ex-button ${index===value && "ex-active"}`} key={index} onClick={() => setValue(index)}>
-                  {data.company} 
+                  {data.company_name} 
                 </button>
               );
             })}
           </div>
           <div className="ex-info">
-            <h3>{title}</h3>
-            <h4>{company}</h4>
+            <h3>{job_title}</h3>
+            <h4>{company_name}</h4>
             <p className="ex-date">{date}</p>
-            {desc.map((element, index) => {
+            {description.map((element, index) => {
               return (
                 <div key={index} className="ex-desc">
                   <FaAngleDoubleRight color="aqua"/>

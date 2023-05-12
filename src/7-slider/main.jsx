@@ -3,16 +3,17 @@ import "./slider.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const url = "https://api.jsonbin.io/v3/b/6458e5689d312622a35a05a1";
+const url_local = "http://localhost:5173/db.json";
 
 export function App() {
   const [people, setPeople] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [active, setActive] = useState(0);
 
   const fetchData = async () => {
-    const response = await fetch(url);
+    const response = await fetch(url_local);
     const peopleList = await response.json();
-    setPeople(peopleList.record);
+    setPeople(peopleList.slider);
     setIsLoading(false);
   };
 
@@ -69,7 +70,8 @@ export function App() {
             <div className={`user-box ${position}`} key={index}>
               <img src={image} alt={name} className="people-image" />
               <h3>{name}</h3>
-              <p>{bio}</p>
+              <p>{profession}</p>
+              <p>age : {age}</p>
             </div>
           );
         })}

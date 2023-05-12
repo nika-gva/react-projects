@@ -1,0 +1,91 @@
+{
+    "experience":[
+        {
+            "job_title": "Software Engineer",
+            "date": "September 5, 2021 - present",
+            "company_name": "Acme Inc.",
+            "description": [
+                "Design and develop software applications for clients.",
+                "Collaborate with cross-functional teams to ensure project success.",
+                "Debug and troubleshoot software issues as needed."
+            ]
+        },
+        {
+            "job_title": "Marketing Manager",
+            "date": "September 5, 2021 - present",
+            "company_name": "XYZ Corporation",
+            "description": [
+                "Develop and execute marketing campaigns to drive revenue growth.",
+                "Analyze market trends and customer data to identify opportunities.",
+                "Manage a team of marketing professionals to achieve business goals."
+            ]
+        },
+        {
+            "job_title": "Human Resources Specialist",
+            "date": "September 5, 2021 - present",
+            "company_name": "ABC Company",
+            "description": [
+                "Support the recruitment and onboarding process for new hires.",
+                "Manage employee benefits and compensation packages.",
+                "Resolve employee relations issues and provide guidance to managers."
+            ]
+        },
+        {
+            "job_title": "Graphic Designer",
+            "date": "September 5, 2021 - present",
+            "company_name": "DEF Agency",
+            "description": [
+                "Create visually appealing designs for digital and print media.",
+                "Collaborate with clients to understand their design needs and preferences.",
+                "Ensure that all design work meets branding and style guidelines."
+            ]
+        },
+        {
+            "job_title": "Financial Analyst",
+            "date": "September 5, 2021 - present",
+            "company_name": "GHI Investments",
+            "description": [
+                "Analyze financial data and market trends to inform investment decisions.",
+                "Develop financial models and projections to support business strategy.",
+                "Present findings and recommendations to senior leadership and investors."
+            ]
+        }
+    ],
+    "slider":[
+        {
+            "id": 1,
+            "image": "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg",
+            "name": "John Doe",
+            "age": 25,
+            "profession": "Software Engineer"
+        },
+        {
+            "id": 2,
+            "image": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+            "name": "Jane Smith",
+            "age": 30,
+            "profession": "Marketing Manager"
+        },
+        {
+            "id": 3,
+            "image": "https://images.pexels.com/photos/936090/pexels-photo-936090.jpeg",
+            "name": "Bob Johnson",
+            "age": 40,
+            "profession": "Financial Analyst"
+        },
+        {
+            "id": 4,
+            "image": "https://images.pexels.com/photos/2263233/pexels-photo-2263233.jpeg",
+            "name": "Alice Lee",
+            "age": 20,
+            "profession": "Graphic Designer"
+        },
+        {
+            "id": 5,
+            "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
+            "name": "David Kim",
+            "age": 35,
+            "profession": "Human Resources Specialist"
+        }
+    ]
+}
