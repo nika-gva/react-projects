@@ -1,8 +1,7 @@
 .tours-container{
     background-color: rgb(167, 174, 197);
-    height: auto;
     min-height: 100vh;
-    padding: 20px 0;
+    padding: 20px;
 }
 .tours-content{
     max-width: 600px;

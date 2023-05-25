@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
@@ -10,14 +10,18 @@ import { App as Accordion } from "./4-accordion/main";
 import { App as Menu } from "./5-menu/main";
 import { App as Expierence } from "./6-expierence/main";
 import { App as Slider } from "./7-slider/main";
+import { Website1 } from "./8-website1/website1";
 import NavData from "./navigation";
 const url = "https://api.jsonbin.io/v3/b/6457bd119d312622a35978d3";
 
 function App() {
   const [navigation, setNavigation] = useState(NavData);
   const [active, setActive] = useState();
-  const [open, setOpen] = useState(true);
-
+  const [open, setOpen] = useState(false);
+  const handleClick = (index) => {
+    setActive(index);
+    setOpen(false);
+  }
   function LandingPage() {
     return (
       <main className="landing-container">
@@ -35,10 +39,10 @@ function App() {
         <div className={`navigation-bar  ${!open && 'nav-close'}`}>
           <div className="navigation-inner">
             <h1>navigation</h1>
-            <ul>
+            <ul className="nav-items">
               {navigation.map((link, index) => {
                 return (
-                  <Link to={link.to} onClick={() => setActive(index)} className={`link ${index === active && "active-link"}`} key={index}>
+                  <Link to={link.to} onClick={() => handleClick(index)} className={`link ${index === active && "active-link"}`} key={index}>
                     {link.name}
                   </Link>
                 );
@@ -57,8 +61,11 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/expierence" element={<Expierence />} />
             <Route path="/slider" element={<Slider />} />
+            <Route path="/website1" element={<Website1 />} />
           </Routes>
-          {!open && <button className="nav-open" onClick={() => setOpen(true)}><FiMenu /></button>}
+          {!open && <button className="nav-open" onClick={() => setOpen(true)}>
+            <FiMenu />
+            </button>}
         </div>
       </div>
     </BrowserRouter>

@@ -34,5 +34,9 @@ export default [
     "to": "/slider",
     "name": "7-Slider"
   },
-  
+  {
+    "id": 7,
+    "to": "/website1",
+    "name": "8-Website"
+  },
 ];

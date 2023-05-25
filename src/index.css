@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+@import url("./reaponsive.css");
 
-*{
+*,*::before,*::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,34 +11,53 @@ body{
 }
 .main-body{
   display: flex;
+  position: relative;
 }
 .elements{
-  overflow: auto;
   position: relative;
+  overflow: auto;
   width: 100%;
   height: 100vh;
 }
 
 .navigation-bar{
   background-color: rgb(97, 94, 94);
-  position: relative;
-  border-right: 2px solid black;
   transition: width .7s;
-  max-width: 230px;
   width: 100%;
+  position: absolute;
+  z-index: 999;
+  height: 100vh;
+  
+}
+.nav-items{
+  overflow: auto;
+  flex: 1;
+  -webkit-overflow-scrolling: none;
+}
+
+.navigation-bar h1{
+  text-align: center;
+  color: wheat;
+  text-transform: uppercase;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 .navigation-inner{
-  width: 100%;
   height: 100%;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .nav-close{
+  border: 0px;
   width: 0px;
+  padding: 0;
   overflow: hidden;
 }
 .nav-open{
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 10px;
   padding: 5px 5px 0 5px;
@@ -47,38 +67,24 @@ body{
   border-radius: 3px;
   font-size: 20px;
   transition: all .3s;
+  z-index: 999;
 }
-.nav-open:hover{
+.nav-open:hover,.navigation-button:hover{
   opacity: .7;
 }
 
 .navigation-button{
-  width: calc(100% - 20px);
+  width: 100%;
   background-color: black;
   border: 1px solid wheat;
-  position: absolute;
   color: wheat;
   padding: 10px 0;
-  bottom: 10px;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 2px;
   border-radius: 4px;
   transition: all .3s;
-}
-.navigation-button:hover{
-  opacity: .7;
-}
-
-.navigation-inner h1{
-  color: wheat;
-  text-transform: uppercase;
-  padding: 5px;
-  margin-bottom: 20px;
-  border: 1px solid black;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-}
-
+} 
 .link{
   text-decoration: none;
   background-color: antiquewhite;
@@ -107,6 +113,7 @@ body{
   background-color: rgb(122, 121, 121);
   padding: 50px;
   text-align: center;
+  border-radius: 10px;
 }
 .landing-box h1{
   margin-bottom: 30px;
@@ -115,6 +122,7 @@ body{
 }
 .landing-box p{
   color: white;
+  min-width: 200px;
 }
 
 /* loading */
